@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-06-23T01:58:43.399Z",
-    "end": "2021-06-23T01:59:39.763Z",
-    "duration": 56364,
+    "start": "2021-06-23T03:10:01.834Z",
+    "end": "2021-06-23T03:10:51.583Z",
+    "duration": 49749,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "75ce393b-8a4f-43f0-afdd-30020aea2f30",
+      "uuid": "e3c06e62-c94d-4b5f-a8a2-28e7b181a2b7",
       "title": "",
       "fullFile": "cypress/integration/homePageTest.js",
       "file": "cypress/integration/homePageTest.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "69f92ad2-3ef7-4afc-928d-52de574d31c1",
+          "uuid": "9ddf41c6-5b27-40ee-9d65-162cd32be6c1",
           "title": "Bizchair.com Regression Suite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Open Homepage, search for Chair and open the first search result",
               "fullTitle": "Bizchair.com Regression Suite Open Homepage, search for Chair and open the first search result",
               "timedOut": null,
-              "duration": 36987,
+              "duration": 29916,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const homePage = new _HomePage.default(); // Open HomePage URL\ncy.visit(Cypress.env('url') + \"/default/Home-Show\");\nhomePage.getPopUpBox().click();\nhomePage.getSearchBox().type('chair');\ncy.wait(2000);\nhomePage.getFirstSearchResult().click();",
               "err": {},
-              "uuid": "8a3d959e-6530-40f4-9ce5-017db182ca7b",
-              "parentUUID": "69f92ad2-3ef7-4afc-928d-52de574d31c1",
+              "uuid": "cf4ff9ea-838e-4c23-82ff-5bda9a07a845",
+              "parentUUID": "9ddf41c6-5b27-40ee-9d65-162cd32be6c1",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Add Items to Cart & Go to checkout as Guest User",
               "fullTitle": "Bizchair.com Regression Suite Add Items to Cart & Go to checkout as Guest User",
               "timedOut": null,
-              "duration": 13933,
+              "duration": 14431,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "//const homePage = new HomePage()\nconst productPage = new _ProductPage.default();\nconst cartPage = new _CartPage.default();\nproductPage.getQuantityPlus().click();\nproductPage.getFirstSwatch().click();\ncy.wait(2000);\nproductPage.getAddToCart().click();\nproductPage.getViewCart().click();\ncartPage.getCommentBox().type('test order');\ncartPage.getCheckoutButton().first().click();\ncy.wait(2000);\ncartPage.getCheckoutAsGuest().click();",
               "err": {},
-              "uuid": "9a9fb936-d4d7-4768-ae32-336807f30f4e",
-              "parentUUID": "69f92ad2-3ef7-4afc-928d-52de574d31c1",
+              "uuid": "8b955335-4dab-4841-bda4-063b3a8d6b90",
+              "parentUUID": "9ddf41c6-5b27-40ee-9d65-162cd32be6c1",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Checkout Page validation",
               "fullTitle": "Bizchair.com Regression Suite Checkout Page validation",
               "timedOut": null,
-              "duration": 2982,
+              "duration": 2884,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "const checkoutPage = new _CheckoutPage.default();\ncheckoutPage.getShippingLocation().select('Residential').should('have.value', 'RESIDENTIAL');\ncheckoutPage.getEmail().type('sasikumar.mohan@simplus.com');\ncheckoutPage.getFirstName().type('Billy');\ncheckoutPage.getLastName().type('Tester');\ncheckoutPage.getAddress1().type('3050 Jackson Ave');\ncheckoutPage.getCity().type('Ann Arbor');\ncheckoutPage.getZIPcode().type('48103');\ncheckoutPage.getState().select('Michigan').should('have.value', 'MI');\ncheckoutPage.getPhone().type('5138868686');\ncheckoutPage.getAddressSameAsBilling().check().should('be.checked'); //checkoutPage.getCheckoutContinue().click()",
               "err": {},
-              "uuid": "532b5dcc-e500-4534-87d8-77042c36769e",
-              "parentUUID": "69f92ad2-3ef7-4afc-928d-52de574d31c1",
+              "uuid": "3d76e08b-cac1-434b-a139-3605bc1830ec",
+              "parentUUID": "9ddf41c6-5b27-40ee-9d65-162cd32be6c1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8a3d959e-6530-40f4-9ce5-017db182ca7b",
-            "9a9fb936-d4d7-4768-ae32-336807f30f4e",
-            "532b5dcc-e500-4534-87d8-77042c36769e"
+            "cf4ff9ea-838e-4c23-82ff-5bda9a07a845",
+            "8b955335-4dab-4841-bda4-063b3a8d6b90",
+            "3d76e08b-cac1-434b-a139-3605bc1830ec"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 53902,
+          "duration": 47231,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

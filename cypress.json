@@ -9,5 +9,7 @@
   "retries": {
     "runMode": 1
   },
-  "projectId": "cn8nmw"
+  "projectId": "cn8nmw",
+  "viewportWidth": 1280,
+  "viewportHeight": 720
 }
